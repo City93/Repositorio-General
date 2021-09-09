@@ -39,4 +39,4 @@ class School {
       return this._pickupPolicy;
     }
   }
-  
+  console.log(PrimarySchool)
