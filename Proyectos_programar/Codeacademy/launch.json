@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Launch",
+        "type": "node",
+        "request": "launch",
+        "program": "C:\\Users\\cityp\\Desktop\Proyectos programar\\Codeacademy\\Proyecto.1"
+        "stopOnEntry": true,
+        "args": [],
+        "cwd": "${fileDirname}",
+        "runtimeExecutable": null,
+        "runtimeArgs": [
+            "--nolazy"
+        ],
+        "env": {
+            "NODE_ENV": "development"
+        },
+        "Console": false,
+        "sourceMaps": false,
+        "outFiles": null
+            
+        }
+    ]
+}

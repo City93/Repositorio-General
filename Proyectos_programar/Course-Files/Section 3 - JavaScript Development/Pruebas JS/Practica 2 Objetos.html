@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+
+    <script>
+        //un OBJETO(CAR) puede tener varias PROPIEDADES(COLOR, CLASE, ETC)
+        var car = {type:"Acura", model:"Integra", color:"White"};
+        document.getElementById("demo").innerHTML =car.model;
+
+        //Para utilizar varias propiedades de un objeto y formar una frase
+        var person = {firstName:"John", lastName:"Smith", age:60, eyeColor:"blue"};
+
+        document.getElementById("demo2").innerHTML = person.firstName + " has " + person.eyeColor + " eyes. ";
+        //Trabajando con Strings (Texto entre comillas)        
+        var studentName1 = "John Smith";
+        var studentName2 = "Roy Martin";
+
+        document.getElementById("demo3").innerHTML = studentName1 + "<br>" + studentName2;
+        //Para trabajar con la longitud de un String
+
+        var txt= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo4").innerHTML = txt.length;
+        //Para poder utilizar las dobles comillas al crear una variable \"palabra\"
+        var y  = "We are the best \"players\" in the country."
+        document.getElementById("demo5").innerHTML = y;
+        //Generador aleatorio de números (TODO: Investigar más sobre esto)
+        document.getElementById("demo6").innerHTML = Math.random();
+        //Para localizar el máximo o minimo en un conjunto de números Math.min y Math.max
+        document.getElementById("demo7").innerHTML =
+        Math.min(600, 300, 50, 75, -5, -150);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script type="text/javascript">
+        
+var x = 6;
+document.getElementById("demo").innerHTML = (x == 8);
+
+//La funcion Boolean se puede usar para saber si una expresion o una variable es verdadera. Todo con un valor verdadero es "True"
+
+var b1 = Boolean(80);
+var b2 = Boolean(2.86);
+var b3 = Boolean(-10);
+var b4 = Boolean("Hi");
+var b5 = Boolean("false");
+var b6 = Boolean(1 + 8 + 10.14);
+var b7 = Boolean(0);
+
+document.getElementById("demo2").innerHTML =
+" 80 is " + b1 + "<br>" +
+"2.86 is " + b2 + "<br>" + 
+"-10 is" + b3 + "<br>" +
+"Any (not empty) string is" + b4 + "<br>" +
+"Any expression (Except zero) is " + b6 + "<br>" +
+"Zero is " + b7;   
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<button onclick="myFunction ()">Click Me</button>
+
+<script type="text/javascript">
+        
+    var count;
+// el primer numero es el comienzo, el segundo es el final y el tercero es el tipo de incremento o loop
+    for(count = 0; count <= 10; count++) {
+        document.write( count );
+        document.write("<br />");
+
+    }
+//----------------------------------------------------------------"In" va entre las propiedades de un objeto
+    var txt = "";
+    var person = {fname:"John", lname:"Smith", age:30};
+    var x;
+    for (x in person) {
+        txt += person[x] + " ";
+    }
+    document.getElementById("demo").innerHTML =txt;
+//----------------------------------------------------------------"While" Continua el loop mientras que el valor aplicado no se cumpla Ejemplo (i<40) cuando i llega a 39 se para
+    var i = 0;
+    while (i < 40) {
+        document.write( i );
+        document.write( "<br />");
+        i++;
+    }
+//----------------------------------------------------------------con Do se ejecuta la funcion aunque no se cumpla el While
+    function myFunction() {
+        var u = 0;
+        do {
+            document.write(u+"<br>");
+            u++;
+        }
+        while (u<10)
+        document.getElementById("demo2").innerHTML = text;
+    }
+
+</script>
+</body>
+</html>

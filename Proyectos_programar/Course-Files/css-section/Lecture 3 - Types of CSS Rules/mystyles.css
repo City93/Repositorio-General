@@ -1,0 +1,31 @@
+		body {
+			background-color: yellow;
+		}
+
+		h1 {
+			color: red;
+			text-align: center;
+		}
+
+		p {
+			font-family: "Arial";
+			font-size: 20px;
+		}
+
+		.blueboldtext {
+
+			font-size: small;
+			color: blue;
+			font-weight: bold;
+		}
+		.largegreentext {
+
+			font-size: large;
+			color: green;
+			font-weight: bold;
+		}
+
+		.underline {
+
+			text-decoration: underline;
+		}

@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<title>Table Tutorial</title>
+		<meta charset="utf-8">
+	</head>
+
+
+<body>
+
+<form name="employment" action="send.php" method="POST">
+ <table width="600" border="1" cellspacing="2" cellpadding="2">
+    <tr>
+      <td>Employment Application/td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>First name</td>
+      <td><input type="text" name="fname" maxlength="50" /></td>
+    </tr>
+    <tr>
+      <td>Last Name</td>
+      <td><input type="text" name="lname" maxlength="50" /></td>
+    </tr>
+    <tr>
+      <td>Position</td>
+      <td>
+
+        <select name="position">
+
+          <option value="AC">Contable</option>
+          <option value="RE">Recepcionista</option>
+          <option value="AD">Administrador</option>
+          <option value="SU">Supervisor</option>
+
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Level</td>
+      <td>   
+        <select name="experience">
+
+        <option value="EL">Entry Level</option>
+        <option value="SE">Some experience</option>
+        <option value="VE">Very Experienced</option>
+        
+      </select>
+    </td>
+    </tr>
+    <tr>
+      <td>Job Type</td>
+      <td>  
+        <input type="checkbox" name="FT"/>Full-Time
+        <input type="checkbox" name="PT"/>Part-Time
+        <input type="checkbox" name="CT"/>Contact
+      </td>
+    </tr>
+    <tr>
+      <td>Employment status</td>
+      <td>
+
+        <input type="radio" name="estatus" value="employed" />Employed
+        <input type="radio" name="estatus" value="unemployed" />Unemployed
+        <input type="radio" name="estatus" value="student" />Student
+
+
+      </td>
+    </tr>
+    <tr>
+      <td>Additional Comments</td>
+      <td>
+
+          <textarea name="comments" cols="45" rows="5">
+
+          </textarea>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+
+      </td>
+      <td>
+
+        <input type="submit" name="submit" value="Submit" />
+        <input type="reset" name="reset" value="reset" />
+
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="garaje"></p>
+<p id="orden"></p>
+<p id="colegio"></p>
+
+<script>
+    //Para arrays se utiliza [], el primer item del array es identificado como el numero 0. array.toString() Para que aparezcan todos los elementos del array
+    //array.join (" separador ") para que los componentes del array tenga un separador especifico
+    var fruits = ["Apple", "Orange", "Pear", "Grape", "Tangerine", "Mango"];
+    fruits.pop();
+    document.getElementById("demo").innerHTML = fruits.join (" * ");
+    document.getElementById("demo2").innerHTML = fruits[3];
+    //Para que desaparezca el ultimo objeto del array usando array.pop() o el primero con array.shift ()
+    //Para añadir un elemento al array array.push("elemento") y para añadirlo al principio del array array.unshift("elemento")
+
+    //Para cambiar elementos del array usando el numero index
+    fruits[0] = "Kiwi";
+    document.getElementById("demo3").innerHTML = fruits.toString ()
+    //Para borrar elemenots
+    delete fruits[2];
+    //Para añadir una lista de elementos a un array. El "2" indica que queremos que los elementos aparezcan a partir del index 2 y el "0" que no queremos borrar ningun elemento
+    var coches = ["Citroen", "Renault"]
+    coches.splice(2, 0, "Ferrari", "Lambo")
+    document.getElementById("garaje").innerHTML = coches.toString()
+    //Se puede ordenar un array alfabeticamente con array con array.sort(); o al reves con array.reverse();
+    coches.sort ();
+    document.getElementById("orden").innerHTML = coches.toString();
+    //Se pueden juntar arrays con concat. Ejemplo: ArrayA.concat(ArrayB);
+    var Girls = ["Julie", "Samantha", "Laura", "Jill"];
+    var Boys = ["Bob", "Joe", "Walt", "Sam", "Fred"]
+    var Combined = Girls.concat(Boys);
+
+    document.getElementById("colegio").innerHTML = Combined;
+
+
+   
+    </script>
+
+
+
+</body>
+</html>
