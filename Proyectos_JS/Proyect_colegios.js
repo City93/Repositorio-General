@@ -41,3 +41,4 @@ class School {
   }
   console.log(PrimarySchool)
   console.log(numberOfStudents)
+  console.log(number)
