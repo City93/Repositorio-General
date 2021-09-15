@@ -8,27 +8,31 @@
 </head>
 <body>
     <form>
-    <p>
-        <label for="name">Nombre:</label>
-        <input type="text">
-    </p>
+    <fieldset>
+        <legend>
+           Cuéntame sobre ti 
+        </legend>
         <p>
-        <label for="apellido">Apellidos:</label>
-        <input type="text">
+            <label for="name">Nombre:</label>
+            <input type="text">
         </p>
         <p>
-        <label for="name">Edad:</label>
-        <input type="number">
+            <label for="apellido">Apellidos:</label>
+            <input type="text">
         </p>
-          <p>Sexo:</p>
-        <input type="radio" id="hombre" name="sexo" value="hombre">
+        <p>
+            <label for="name">Edad:</label>
+            <input type="number">
+        </p>
+        <p>Sexo:</p>
+            <input type="radio" id="hombre" name="sexo" value="hombre">
             <label for="hombre">Hombre</label><br>
             <input type="radio" id="hombre" name="sexo" value="hombre">
             <label for="mujer">Mujer</label><br>
             <input type="radio" id="mujer" name="sexo" value="no-binario">
             <label for="no-binario">No binario</label>
-        <p><label>Me siento viejuner </label>
-            <input type="checkbox" id="viejuner" name="viejuner" value="viejuner">
+        <p><label name="viejuner">Me siento viejuner </label>
+                <input type="checkbox" id="viejuner" name="viejuner" value="viejuner">
         </p>
         <p>
             <label for="w3review">Escribe algo sobre ti:<label>
@@ -41,8 +45,199 @@
         </p>
         <p>
             <label for="telefono">Telefono:</label>
-            <input type="number" id="telefono" name="telefono" max="9">
+            <input type="tel" id="telefono" name="telefono" maxlength="9">
         </p>
+
+    </fieldset>
+    <fieldset>
+        <legend>Los ladronzuelos de bicicletas</legend>
+        <p>
+            <label for="fecha">Día:</label>
+            <input type="date" name="fecha" id="fecha">
+        </p>
+        <p>
+            <label for="fecha">Hora:</label>
+            <input type="time" name="dia" id="dia">
+        </p>
+        <p>
+            <label for="color">Color de la bicicleta:</label>
+            <input type="color" name="color" id="color">
+        </p>    
+        <p>
+            <label for="rango">Rango de precio:</label>
+            <span>Barato</span>
+            <input type="range" name="rango" id="rango" min="0" max="2000">
+            <span>Deluxe</span>
+        </p>
+        <p>
+            <label for="selector">Tipo de bicicleta:</label>
+            <select id="selector" name="selector">
+                <option value="id1">Paseo</option>
+                <option value="id2">Señorial</option>
+                <option value="id3">Anti-plebeyos</option>
+                <option value="id4">PorEncimaDelHombro</option>
+                <option value="id5">Montaña</option>
+                <option value="id6">Gamusinos</option>
+                <option value="id7">Hueleflores premium</option>
+                <option value="id8">Fango lover</option>
+                <option value="id9">Carreras</option>
+                <option value="id10">Metroymedio</option>
+                <option value="id11">3 de la tarde.Fluorecente edition</option>
+                <option value="id12">Grupitors</option>
+            </select>        
+        </p>
+        <p>
+            <label for="accesorios">Elije tu accesorios:</label>
+            <select id="accesorios" name="accesorios" size="5" multiple>
+            <option value="ruedines">Ruedines</option>
+            <option value="pegatinas">Pegatinas</option>
+            <option value="cestita">Cestita</option>
+            <option value="bomba">Bomba de aire</option>
+            <option value="timbre">Timbre</option>
+            <option value="foco">Foco</option>
+            </select>
+        </p>
+        <p>
+            <label for="marca">¿Qué marca era?:</label>
+            <input list="marcas" name="marca" id="marca">
+            <datalist id="marcas">
+                <option value="specialized">
+                <option value="trek">
+                <option value="merida">
+                <option value="scott">
+                <option value="giant">
+                <option value="cube">
+                <option value="lapierre">
+                <option value="orbea">
+                <option value="cannondale">
+                <option value="bmc">
+                <option value="canyon">
+                <option value="look">
+                <option value="protek">
+                <option value="megamo">
+                <option value="pinarello">
+                <option value="bianchi">
+                <option value="bh">
+                <option value="ghost">
+                <option value="cervelo">
+                <option value="argon">
+            </datalist>
+        </p>
+    </fieldset>
     </form>
 </body>
 </html>
+
+
+<!-- Tú:
+
+Nombre: texto
+
+Apellidos: texto
+
+Edad: número
+
+Sexo: radio
+
+Me siento viejuner: casilla
+
+Escribe algo sobre tí: multilínea
+
+Tus circunstancias:
+
+Correo electrónico: correo
+
+Teléfono: teléfono
+
+Los ladronzuelos de bicicletas
+Día: fecha
+
+Hora: tiempo
+
+Color de la bicicleta: color
+
+Rango de precio: range
+
+Tipo de bicicleta: selector
+
+Paseo
+
+Señorial
+
+Anti-plebeyos
+
+PorEncimaDelHombro
+
+Montaña
+
+Gamusinos
+
+Hueleflores premium
+
+Fango lover
+
+Carreras
+
+Metroymedio
+
+3 de la tarde. Fluorescente edition
+
+Grupitors
+
+Accesorios: selector multiple
+
+Ruedines
+
+Pegatinas
+
+Cestita
+
+Bomba de aire
+
+Timbre
+
+Foco
+
+¿Qué marca era?: Lista de datos
+
+specialized
+
+trek
+
+merida
+
+scott
+
+giant
+
+cube
+
+lapierre
+
+orbea
+
+cannondale
+
+bmc
+
+canyon
+
+look
+
+protek
+
+megamo
+
+pinarello
+
+bianchi
+
+bh
+
+factor
+
+ghost
+
+cervélo
+
+argon -->
